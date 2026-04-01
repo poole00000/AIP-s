@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AIP Portal - USA, Canada, Mexico, Caribbean</title>
+  <style>
+    body {
+      margin: 0;
+      background: #d7d1b0;
+      color: #111;
+      font-family: "Times New Roman", Times, serif;
+      background-image:
+        linear-gradient(rgba(0,0,0,0.03), rgba(0,0,0,0.03)),
+        repeating-linear-gradient(0deg, #d7d1b0, #d7d1b0 24px, #d2c9a0 25px);
+    }
+
+    a { color: #002f7a; }
+    a:visited { color: #5a2068; }
+    a:hover { color: #b10000; }
+
+    .page {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 14px;
+    }
+
+    .topbar {
+      background: #1e4d1e;
+      color: #fff6c9;
+      border: 4px ridge #d4c36d;
+      padding: 10px 14px;
+      text-align: center;
+      box-shadow: 4px 4px 0 #6e6743;
+    }
+
+    .topbar h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .blink {
+      animation: blinker 1.1s step-start infinite;
+      font-weight: bold;
+      color: #fff;
+      background: #7a0000;
+      padding: 2px 6px;
+      border: 1px solid #fff;
+      margin-left: 8px;
+      display: inline-block;
+    }
+
+    @keyframes blinker {
+      50% { opacity: 0.2; }
+    }
+
+    .marquee-wrap {
+      margin: 10px 0;
+      border: 3px groove #8b7d42;
+      background: #f6efc8;
+      padding: 6px;
+      font-weight: bold;
+    }
+
+    .navtable, .legendtable, .linktable {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 14px;
+      background: #f5eed0;
+      border: 3px solid #5e552e;
+    }
+
+    .navtable td, .legendtable td, .linktable th, .linktable td {
+      border: 1px solid #5e552e;
+      padding: 8px;
+      vertical-align: top;
+    }
+
+    .navtable a {
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .panel {
+      margin-top: 14px;
+      border: 3px ridge #7f7441;
+      background: #efe5bc;
+      padding: 12px;
+      box-shadow: 4px 4px 0 #9d9368;
+    }
+
+    .intro {
+      line-height: 1.55;
+      font-size: 1.05rem;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: 1fr 240px;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    input, select {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 1rem;
+      padding: 8px;
+      border: 2px inset #b0a77d;
+      background: #fffef5;
+    }
+
+    .frog-banner {
+      margin-top: 12px;
+      background: #dff0c6;
+      border: 2px dashed #2f6b2f;
+      color: #234923;
+      padding: 8px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .section {
+      margin-top: 18px;
+      border: 3px ridge #7f7441;
+      background: #f5eed0;
+      padding: 10px;
+    }
+
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 1.45rem;
+      color: #173617;
+      border-bottom: 2px solid #7f7441;
+      padding-bottom: 4px;
+    }
+
+    .status-public { background: #dff5dd; }
+    .status-login { background: #fff0c9; }
+    .status-contact { background: #eddcf8; }
+
+    .small {
+      font-size: 0.94rem;
+      color: #333;
+    }
+
+    .center { text-align: center; }
+
+    .frog {
+      font-size: 1.5rem;
+      margin: 0 4px;
+    }
+
+    .webring {
+      margin-top: 18px;
+      text-align: center;
+      border: 2px dotted #5f7d2b;
+      background: #edf7d8;
+      padding: 8px;
+    }
+
+    .counter {
+      display: inline-block;
+      margin-top: 8px;
+      background: #000;
+      color: #00ff62;
+      font-family: monospace;
+      padding: 4px 8px;
+      border: 2px inset #666;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @media (max-width: 760px) {
+      .controls {
+        grid-template-columns: 1fr;
+      }
+
+      .topbar h1 {
+        font-size: 1.5rem;
+      }
+
+      .navtable td {
+        display: block;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="topbar">
+      <h1>North America & Caribbean AIP Portal <span class="blink">NEW!</span></h1>
+      <div>Official Aeronautical Information Publication access page for pilots, dispatchers, planners, and curious frog-friends.</div>
+    </div>
+
+    <div class="marquee-wrap">
+      <marquee behavior="scroll" direction="left">Welcome to the Aeronautical Information Publication Portal · USA · Canada · Mexico · Bermuda · Bahamas · Jamaica · Cuba · Cayman Islands · Eastern Caribbean · Turks and Caicos · Frogs on patrol 🐸</marquee>
+    </div>
+
+    <table class="navtable">
+      <tr>
+        <td><a href="#north-america">North America</a></td>
+        <td><a href="#caribbean-public">Caribbean Public Access</a></td>
+        <td><a href="#caribbean-login">Login / Subscription</a></td>
+        <td><a href="#caribbean-contact">Authority / Reference</a></td>
+      </tr>
+    </table>
+
+    <div class="panel intro">
+      This page is intentionally styled like an old web portal, but the links are organized to stay easy to use. Search by country or authority, or filter by access type. Some Caribbean AIPs are fully public; others require login, subscription, or direct contact with the authority.
+
+      <div class="controls">
+        <input id="search" type="text" placeholder="Search country, territory, authority..." />
+        <select id="accessFilter">
+          <option value="all">All access types</option>
+          <option value="public">Public access</option>
+          <option value="login">Login / subscription</option>
+          <option value="contact">Authority / reference</option>
+        </select>
+      </div>
+
+      <div class="frog-banner">
+        <span class="frog">🐸</span>
+        The swamp navigation council recommends checking AIRAC currency, AIP amendments, AIP SUP, AIC, and NOTAMs before operational use.
+        <span class="frog">🐸</span>
+      </div>
+    </div>
+
+    <table class="legendtable">
+      <tr>
+        <td class="status-public"><strong>Public access</strong><br><span class="small">Open official page or PDF.</span></td>
+        <td class="status-login"><strong>Login / subscription</strong><br><span class="small">Official source requires account or acquisition process.</span></td>
+        <td class="status-contact"><strong>Authority / reference</strong><br><span class="small">Official authority page or publication hub, but no clear public standalone AIP page found.</span></td>
+      </tr>
+    </table>
+
+    <div class="section" id="north-america">
+      <h2>North America</h2>
+      <table class="linktable">
+        <thead>
+          <tr>
+            <th>Country / Area</th>
+            <th>Status</th>
+            <th>Description</th>
+            <th>Links</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="entry status-public" data-access="public" data-search="united states usa faa aip pdf publications puerto rico usvi">
+            <td><strong>United States</strong><br><span class="small">FAA</span></td>
+            <td>Public</td>
+            <td>Official FAA AIP and publications hub. Includes U.S. system coverage such as Puerto Rico and the U.S. Virgin Islands.</td>
+            <td>
+              <a href="https://www.faa.gov/air_traffic/publications/media/AIP_Basic_dtd_1-22-26.pdf" target="_blank" rel="noreferrer">U.S. AIP PDF</a><br>
+              <a href="https://www.faa.gov/air_traffic/publications/" target="_blank" rel="noreferrer">FAA publications</a>
+            </td>
+          </tr>
+          <tr class="entry status-public" data-access="public" data-search="canada nav canada aip canada aeronautical information">
+            <td><strong>Canada</strong><br><span class="small">NAV CANADA</span></td>
+            <td>Public</td>
+            <td>Official AIP Canada landing page and broader aeronautical information access from NAV CANADA.</td>
+            <td>
+              <a href="https://www.navcanada.ca/en/aeronautical-information/aip-canada.aspx" target="_blank" rel="noreferrer">AIP Canada</a><br>
+              <a href="https://www.navcanada.ca/en/aeronautical-information.aspx" target="_blank" rel="noreferrer">All aeronautical info</a>
+            </td>
+          </tr>
+          <tr class="entry status-login" data-access="login" data-search="mexico seneam afac aip mexico login portal">
+            <td><strong>Mexico</strong><br><span class="small">SENEAM / AFAC</span></td>
+            <td>Login</td>
+            <td>Official AIP México portal. Current access is portal-based, though official PDFs may also be available within the same domain.</td>
+            <td>
+              <a href="https://aipmexico.seneam.gob.mx/" target="_blank" rel="noreferrer">AIP México portal</a><br>
+              <a href="https://aipmexico.seneam.gob.mx/AIP/doc/GEN/GEN_0/GEN_0.1.pdf?1599683099=" target="_blank" rel="noreferrer">Sample official PDF</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section" id="caribbean-public">
+      <h2>Caribbean - Public Access</h2>
+      <table class="linktable">
+        <thead>
+          <tr>
+            <th>Country / Territory</th>
+            <th>Status</th>
+            <th>Description</th>
+            <th>Links</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="entry status-public" data-access="public" data-search="bermuda airport authority aip eaip txkf aeronautical information publication">
+            <td><strong>Bermuda</strong><br><span class="small">Bermuda Airport Authority</span></td>
+            <td>Public</td>
+            <td>Official Bermuda AIP page with access to the current AIP, eAIP, amendment material, and supplements.</td>
+            <td>
+              <a href="https://www.airportauthority.bm/ais/aeronautical-info-publication.html" target="_blank" rel="noreferrer">Bermuda AIP</a><br>
+              <a href="https://www.airportauthority.bm/eaip/27-Nov-2025-A/2025-11-27-AIRAC/html/eAIP/TX-GEN-0.1-en-GB.html" target="_blank" rel="noreferrer">Bermuda eAIP</a>
+            </td>
+          </tr>
+          <tr class="entry status-public" data-access="public" data-search="jamaica jcaa aim aip supplements aeronautical information">
+            <td><strong>Jamaica</strong><br><span class="small">JCAA</span></td>
+            <td>Public</td>
+            <td>Official Jamaica Civil Aviation Authority aeronautical information pages, including AIM resources and AIP supplements.</td>
+            <td>
+              <a href="https://www.jcaa.gov.jm/aeronautical-information-management/" target="_blank" rel="noreferrer">AIM page</a><br>
+              <a href="https://www.jcaa.gov.jm/aip-supplements/" target="_blank" rel="noreferrer">AIP supplements</a>
+            </td>
+          </tr>
+          <tr class="entry status-public" data-access="public" data-search="cuba aismet aip cuba avianet iacc">
+            <td><strong>Cuba</strong><br><span class="small">AISMET / IACC</span></td>
+            <td>Public</td>
+            <td>Public AIP Cuba page with GEN, ENR, and AD sections exposed through the official aeronautical information service.</td>
+            <td>
+              <a href="https://aismet.avianet.cu/html/aip.html" target="_blank" rel="noreferrer">AIP Cuba</a><br>
+              <a href="https://www.iacc.gob.cu/" target="_blank" rel="noreferrer">IACC website</a>
+            </td>
+          </tr>
+          <tr class="entry status-public" data-access="public" data-search="cayman islands airports authority aip pdf cayman">
+            <td><strong>Cayman Islands</strong><br><span class="small">CIAA / CAACI</span></td>
+            <td>Public</td>
+            <td>Official Cayman Islands AIP landing page and public PDF publication hosted by the Cayman Islands Airports Authority.</td>
+            <td>
+              <a href="https://www.caymanairports.com/aeronautical-information-publication" target="_blank" rel="noreferrer">AIP landing page</a><br>
+              <a href="https://www.caymanairports.com/assets/documents/General-Section-Mar-19-2026-version-1-1773942870-3sbXa4.pdf" target="_blank" rel="noreferrer">Current Cayman AIP PDF</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section" id="caribbean-login">
+      <h2>Caribbean - Login / Subscription</h2>
+      <table class="linktable">
+        <thead>
+          <tr>
+            <th>Country / Territory</th>
+            <th>Status</th>
+            <th>Description</th>
+            <th>Links</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="entry status-login" data-access="login" data-search="eastern caribbean ecar eaip antigua barbuda dominica grenada saint lucia st vincent trinidad tobago">
+            <td><strong>Eastern Caribbean eAIP</strong><br><span class="small">TTCAA / Piarco AIS</span></td>
+            <td>Subscription</td>
+            <td>Regional Eastern Caribbean eAIP access handled through the Trinidad and Tobago CAA. Covers multiple Caribbean states and islands with controlled access.</td>
+            <td>
+              <a href="https://caa.gov.tt/eaip-acquisition-form/" target="_blank" rel="noreferrer">eAIP acquisition form</a><br>
+              <a href="https://caa.gov.tt/aim/" target="_blank" rel="noreferrer">TTCAA AIM page</a>
+            </td>
+          </tr>
+          <tr class="entry status-login" data-access="login" data-search="trinidad and tobago eastern caribbean aip amendments password">
+            <td><strong>Trinidad & Tobago / ECAR updates</strong><br><span class="small">TTCAA</span></td>
+            <td>Passworded</td>
+            <td>TTCAA indicates ECAR AIP amendments are controlled-access, while public AIP SUPs and notices are available without login.</td>
+            <td>
+              <a href="https://caa.gov.tt/notices-to-operators-notification/aip-sups/" target="_blank" rel="noreferrer">Public AIP SUPs</a><br>
+              <a href="https://caa.gov.tt/notices-to-operators-notification/" target="_blank" rel="noreferrer">NOTAM / notices</a>
+            </td>
+          </tr>
+          <tr class="entry status-login" data-access="login" data-search="turks and caicos aip password tciaa">
+            <td><strong>Turks and Caicos Islands</strong><br><span class="small">TCIAA / TCICAA</span></td>
+            <td>Restricted</td>
+            <td>Public aeronautical information pages exist, but AIP access is generally controlled rather than openly published.</td>
+            <td>
+              <a href="https://tciairports.com/aeronautical-information-circular-aic" target="_blank" rel="noreferrer">TCI AIC page</a><br>
+              <a href="https://tcicaa.tc/" target="_blank" rel="noreferrer">TCICAA website</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section" id="caribbean-contact">
+      <h2>Caribbean - Authority / Reference Pages</h2>
+      <table class="linktable">
+        <thead>
+          <tr>
+            <th>Country / Territory</th>
+            <th>Status</th>
+            <th>Description</th>
+            <th>Links</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="entry status-contact" data-access="contact" data-search="bahamas caa civil aviation authority bahamas aip ais publications nassau">
+            <td><strong>Bahamas</strong><br><span class="small">Civil Aviation Authority Bahamas</span></td>
+            <td>Authority page</td>
+            <td>Official Bahamas aviation authority pages and publication hub. Bahamian regulations reference AIP issuance, but a clear public standalone AIP portal was not found.</td>
+            <td>
+              <a href="https://caabahamas.com/" target="_blank" rel="noreferrer">CAA Bahamas</a><br>
+              <a href="https://caabahamas.com/documents/" target="_blank" rel="noreferrer">Publications</a>
+            </td>
+          </tr>
+          <tr class="entry status-contact" data-access="contact" data-search="dominican republic republica dominicana idac aip government">
+            <td><strong>Dominican Republic</strong><br><span class="small">IDAC</span></td>
+            <td>Authority page</td>
+            <td>Official Dominican aviation authority site. AIP is referenced in the government ecosystem, but a stable public AIP landing page was not clearly exposed.</td>
+            <td>
+              <a href="https://idac.gob.do/" target="_blank" rel="noreferrer">IDAC website</a><br>
+              <a href="https://www.idac.gob.do/es/dnv/licencias-aeronauticas/" target="_blank" rel="noreferrer">Referenced portal section</a>
+            </td>
+          </tr>
+          <tr class="entry status-contact" data-access="contact" data-search="british virgin islands aip assi air safety support international">
+            <td><strong>British Virgin Islands</strong><br><span class="small">ASSI reference</span></td>
+            <td>Contact / fee</td>
+            <td>ASSI indicates the BVI AIP is available through the relevant channels, but not openly published on a direct public page.</td>
+            <td>
+              <a href="https://www.airsafety.aero/about-assi/overseas-territories/british-virgin-islands" target="_blank" rel="noreferrer">ASSI BVI page</a><br>
+              <a href="https://www.airsafety.aero/airports-and-air-traffic-services/aeronautical-informaton-publications" target="_blank" rel="noreferrer">ASSI AIP reference</a>
+            </td>
+          </tr>
+          <tr class="entry status-contact" data-access="contact" data-search="anguilla aip assi eastern caribbean">
+            <td><strong>Anguilla</strong><br><span class="small">ASSI / Eastern Caribbean</span></td>
+            <td>Contact</td>
+            <td>ASSI points users toward the relevant Anguilla AIP contacts and Eastern Caribbean publication access route.</td>
+            <td>
+              <a href="https://www.airsafety.aero/about-assi/overseas-territories/anguilla" target="_blank" rel="noreferrer">ASSI Anguilla page</a><br>
+              <a href="https://caa.gov.tt/eaip-acquisition-form/" target="_blank" rel="noreferrer">Eastern Caribbean access</a>
+            </td>
+          </tr>
+          <tr class="entry status-contact" data-access="contact" data-search="montserrat aip assi eastern caribbean">
+            <td><strong>Montserrat</strong><br><span class="small">ASSI / Eastern Caribbean</span></td>
+            <td>Contact</td>
+            <td>Montserrat AIP access is referenced through ASSI and Eastern Caribbean publication channels rather than a public standalone AIP page.</td>
+            <td>
+              <a href="https://www.airsafety.aero/about-assi/overseas-territories/monserrat" target="_blank" rel="noreferrer">ASSI Montserrat page</a><br>
+              <a href="https://caa.gov.tt/eaip-acquisition-form/" target="_blank" rel="noreferrer">Eastern Caribbean access</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="webring">
+      <div><strong>Frog Aviation Webring</strong> · best viewed with strong situational awareness · handmade internet energy</div>
+      <div class="counter">VISITORS: 000042</div>
+      <div style="margin-top:8px; font-size: 1.4rem;">🐸 ✈️ 🐸 ✈️ 🐸</div>
+    </div>
+  </div>
+
+  <script>
+    const searchInput = document.getElementById('search');
+    const accessFilter = document.getElementById('accessFilter');
+    const entries = Array.from(document.querySelectorAll('.entry'));
+
+    function applyFilters() {
+      const q = searchInput.value.trim().toLowerCase();
+      const access = accessFilter.value;
+
+      entries.forEach(entry => {
+        const haystack = (entry.dataset.search || '').toLowerCase();
+        const matchesSearch = !q || haystack.includes(q);
+        const matchesAccess = access === 'all' || entry.dataset.access === access;
+        entry.classList.toggle('hidden', !(matchesSearch && matchesAccess));
+      });
+    }
+
+    searchInput.addEventListener('input', applyFilters);
+    accessFilter.addEventListener('change', applyFilters);
+  </script>
+</body>
+</html>
